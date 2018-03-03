@@ -66,7 +66,7 @@ switch ($e->name) {
                     case ($k == 'modules' && count($v) > 0):
                         $sql = "SELECT id,name as name FROM " . $modx->getFullTableName("site_modules") . " WHERE id IN(" . implode(',', $v) . ")";
                         $tpl = 'index.php?a=112&id=[+id+]';
-                        $icon = 'fa-cogs';
+                        $icon = 'fa-cubes';
                         break;
                     case ($k == 'chunks' && count($v) > 0):
                         $sql = "SELECT id,description as name FROM " . $modx->getFullTableName("site_htmlsnippets") . " WHERE id IN(" . implode(',', $v) . ")";
